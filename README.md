@@ -36,22 +36,18 @@ Smart Share Button on Every Link (Just like Instagram)
 
 ## 🛠️ Installation
 
-### 🔁 Option 1: Clone the Repository
-
-1. **Clone the repository:**
+### 1. **Clone the repository:**
 
 ```bash
 git clone https://github.com/anuswarrrao/freelink-bio.git
 cd freelink-bio-main
 ```
 
-2. **Open the `index.html` file** in your preferred web browser.
+### 2. **Open the project using Live Server:**
 
-### 📦 Option 2: Direct Download
-
-1. **Download the repository as a ZIP** file from GitHub.
-2. **Extract** the contents to your desired location.
-3. **Open `index.html`** in your web browser.
+   - Install the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code
+   - Right-click on `index.html` and select "Open with Live Server"
+   - The project will open in your browser
 
 
 
@@ -61,44 +57,42 @@ cd freelink-bio-main
 freelink-bio/
 │
 ├── LICENSE.md               # MIT license file
-├── README.md                # Documentation
-├── index.html               # Main page
+├── README.md                # Project documentation
+├── index.html               # Main HTML page
 ├── CNAME                    # GitHub Pages custom domain (optional)
 │
-├── assets/
+├── assets/                  # Static assets directory
 │   ├── css/
-│   │   ├── styles.css
-│   │   └── styles.css.map
-│   ├── scss/
-│   ├── images/
-│   │   ├── favicon/
-│   │   ├── icon/
-│   │   ├── anuswar-rao-profile-photo.webp
-│   │   └── preview.jpg
+│   │   └── styles.css       # Main stylesheet with hover effects
+│   ├── scss/                # SCSS source files (optional)
+│   └── images/
+│       ├── favicon/         # Favicon files for all platforms
+│       ├── icon/            # SVG icons (arrow, dots, social media, etc.)
+│       ├── anuswar-rao-profile-photo.webp  # Profile photo
+│       └── preview.jpg      # Social media preview image
 │
-├── js/
-│   ├── app.js
-│   └── modules/
+├── js/                      # JavaScript modules
+│   ├── app.js               # Main application script
+│   └── modules/             # Modular JS components
 │
-├── libraries/
-│   ├── google-font/
-│   ├── toastify/
-│   ├── animate.min.css
-│   └── qrcode.min.js
-
+└── libraries/               # Third-party libraries
+    ├── google-font/         # Self-hosted Nunito font files
+    ├── toastify/            # Toast notification library
+    ├── animate.min.css      # Animation library
+    └── qrcode.min.js        # QR code generation library
 ```
 
 
 ## 🧰 Tech Stack
 
-| Tool / Library    | Purpose                         |
+| Tool / Library    | Purpose                          |
 |-------------------|----------------------------------|
 | **HTML, CSS, JS** | Core Structure & Functionality   |
-| Google Fonts      | Custom Typography                |
+| **SCSS/Sass/**    | CSS Preprocessor for styling     |
+| Google Fonts      | Custom Typography (Nunito)       |
 | Animate.css       | Transitions & Animations         |
 | QRCode.js         | QR Code Generation               |
-| Toastify.js       | Notifications                    |
-
+| Toastify.js       | Toast Notifications              |
 
 ## 🤝 Contributing
 

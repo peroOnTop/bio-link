@@ -10,6 +10,32 @@
   border: 0;
 }
 
+/* =============== CUSTOM TOAST NOTIFICATIONS =============== */
+.custom-toast {
+  font-family: "Nunito", sans-serif !important;
+  letter-spacing: -0.01em;
+}
+
+body.light-mode .custom-toast {
+  background: rgba(255, 255, 255, 0.95) !important;
+  color: #000 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.toast-close {
+  font-weight: 700 !important;
+  opacity: 0.5 !important;
+}
+
+.toast-close:hover {
+  opacity: 1 !important;
+}
+
+body.light-mode .toast-close {
+  color: #000 !important;
+}
+
 /* =============== STATIC GRID BACKGROUND =============== */
 body::before {
   content: "";
@@ -21,7 +47,7 @@ body::before {
   pointer-events: none;
   z-index: -1;
   background-image: linear-gradient(rgba(255, 255, 255, 0.05) 0.1em, transparent 0.1em), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0.1em, transparent 0.1em);
-  background-size: 3em 3em;
+  background-size: 5em 5em;
 }
 
 /* =============== BASIC STYLES =============== */
@@ -289,6 +315,19 @@ small {
 .dots-img {
   width: 24px;
   height: 24px;
+  transition: content 0.3s ease;
+}
+
+/* Change dots to arrow when hovering over the left side (link content) */
+.link-wrapper a:hover ~ .dots-btn .dots-img {
+  content: url("../images/icon/arrow.svg");
+  transform: rotate(-45deg);
+}
+
+/* Keep dots when hovering directly on the dots button (right side) */
+.dots-btn:hover .dots-img {
+  content: url("../images/icon/dots.svg");
+  transform: rotate(0deg);
 }
 
 .share-overlay {
