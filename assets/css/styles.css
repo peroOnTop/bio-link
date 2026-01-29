@@ -1,4 +1,8 @@
 /* =============== ACCESSIBILITY =============== */
+.social-links li {
+  list-style: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -8,6 +12,7 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+
 }
 
 /* =============== CUSTOM TOAST NOTIFICATIONS =============== */
@@ -513,4 +518,64 @@ small {
   .popup-title {
     font-size: 1.25rem;
   }
+}
+/* PRODUCTS */
+
+/* PRODUCTS */
+.products {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.products.hidden {
+  display: none;
+}
+
+.products h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.product-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 14px;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 0.6rem 0 0.2rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #00ffae;
+}
+
+/* Button style */
+.products-btn {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: inherit;
 }
